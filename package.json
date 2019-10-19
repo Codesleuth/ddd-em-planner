@@ -1,0 +1,31 @@
+{
+  "name": "ddd-em-planner",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./ && workbox injectManifest workbox-config.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Wood <david.p.wood@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "standard": "^14.3.1",
+    "workbox-cli": "^4.3.1"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
