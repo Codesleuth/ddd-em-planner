@@ -3,7 +3,7 @@ import initApp from './app'
 let serviceWorkerRegistration // eslint-disable-line no-unused-vars
 
 async function registerServiceWorker () {
-  const r = await navigator.serviceWorker.register('./sw.js')
+  const r = await navigator.serviceWorker.register('./service_worker.js')
   serviceWorkerRegistration = r
 }
 

@@ -1,5 +1,5 @@
 /* eslint-env serviceworker */
-/* global workbox:false */
+/* global workbox:false precacheManifest:false */
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js')
 
@@ -11,4 +11,4 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate()
 )
 
-workbox.precaching.precacheAndRoute([])
+workbox.precacheAndRoute(precacheManifest)
